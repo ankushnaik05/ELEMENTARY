@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>table</title>
+    <h4> program that prints a multiplication table for numbers up to 12.</h4>
+</head>
+
+<body>
+    <form id="frm">
+        <input type="number">enter</input>
+        <button onclick="myfunction()" type="button">submit</button>
+
+    </form>
+
+
+
+</body>
+<script>
+    function myfunction() {
+        var x;
+        x = document.getElementById("frm").elements[0].value;//
+        document.write("<table> <tr> <th></th> </tr>");
+        for (i = 1; i <= x; i++) {  // will check the range 
+            document.write("<tr>");
+            for (j = 1; j <= 10; j++) { // it will calculate only upto 10
+                document.write("<td>", i * j, "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    }
+
+</script>
+
+</html>

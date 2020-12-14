@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>sum and product</title>
+<h4> Write a program that asks the user
+    for a number n and gives them the possibility to choose
+    between computing the sum and computing the product of 1,…,n</h4>
+
+<body>
+    <form id="frm">
+        <input type="number">type name</input>
+        <button onclick="myfunction()" type="button">+</button>
+        <button onclick="myfunction1()" type="button">*</button>
+    </form>
+
+
+
+
+
+
+    <script>
+        function myfunction() {
+            var x;
+            var sum = 0;
+            x = document.getElementById("frm").elements[0].value;
+            for (i = 0; i <= x; i++) { //it will check the condition
+                sum = sum + i; // takes sum of all the numbers which are in the input
+            }
+            document.write(sum);
+        }
+        function myfunction1() {
+            var y;
+            var mul = 1;
+            y = document.getElementById("frm").elements[0].value;
+            for (i = 1; i <= y; i++) { // it will check the condition
+                mul = mul * i;// takes product of all the numbers which are in the input
+
+            }
+            document.write(mul);
+
+        }
+    </script>
+
+</body>
+
+</html>

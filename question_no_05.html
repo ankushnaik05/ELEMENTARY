@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>multiplies</title>
+<h4> multiples of three or five are considered in the sum</h4>
+
+<body>
+    <form id="frm">
+        <input name="x" type="number">enter a value</input>
+        <button onclick="myfunction()" type="button">submit</button> 
+    </form>
+
+
+
+
+
+
+    <script>
+        function myfunction() {
+            var x;
+            var sum = 0;
+            x = document.getElementById("frm").elements[0].value;
+            for (i = 0; i <= x; i++) { //check the condition
+                if (i % 5 == 0 || i % 3 == 0) { // it only multiples of three or five are considered in the sum
+                    sum = sum + i;
+                }
+
+            }
+            document.write("sum of written value is " + sum);
+        }
+
+    </script>
+
+</body>
+
+</html>

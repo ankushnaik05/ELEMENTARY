@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title> hello<title>
+    <h1>only the users Alice and Bob are greeted with their names.</h1>
+
+    <body>
+      <form id="frm">
+        <input>type name</input>
+        <button onclick="myfunction()" type="button">submit</button>
+      </form>
+
+
+
+
+
+
+      <script>
+        function myfunction() {
+          var x;
+          x = document.getElementById("frm").elements[0].value;
+          if (x == "bob" || x == "alice") { // condition acts only when bob or alice in input
+            document.write("hello" + x); // this will greet only bob or alice 
+          }
+
+
+        }
+      </script>
+
+    </body>
+
+</html>

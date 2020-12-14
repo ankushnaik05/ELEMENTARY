@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prime number</title>
+<h4>Write a program that prints all prime numbers</h4>
+</head>
+<body>
+
+<p id="frm"></p>
+
+</body>
+<script>
+    var x;
+    x=document.getElementById("frm").value;
+    for(i=1 ; i<=x ; i++){
+        c=0;
+       for(j=1 ; j<=i ; j++){
+
+        if(i%j==0){
+            c++;
+           document.write(x);
+        }
+       }
+        
+console.log(x);
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <title>number n sum<title>
+    <h4> Write a program that asks the user for a number n and prints the sum of the numbers 1 to n</h4>
+
+<body>
+    <form id="frm">
+        <p>enter the number
+        <input class="txt" type="number" ></input></p>
+        
+        <button class="txt" onclick="myfunction()" type="button">submit</button>
+       
+    </form>
+
+
+
+
+
+
+    <script>
+        function myfunction() {
+            var x;
+            var sum = 0;
+            x = document.getElementById("frm").elements[0].value;
+            for (i = 0; i <= x; i++) { // it will add all numbers upto the input
+                sum = sum + i;
+
+            }
+            document.write("sum of values from 1 to ",x ," is ",sum);
+        }
+    </script>
+
+</body>
+
+</html>
